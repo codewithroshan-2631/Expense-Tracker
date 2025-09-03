@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Expense Tracker</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/5f4e5a9a3b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+
+      <!-- Item Name -->
+      <label for="item-name" class="form-label">Item Name:</label>
+      <input class="form-control" id="item-name" placeholder="Enter Item Name">
+
+      <!-- Item Amount -->
+      <label for="item-amount" class="form-label">Item Amount:</label>
+      <input type="number" class="form-control" id="item-amount" placeholder="Enter Item Amount">
+
+      <!-- Buttons -->
+      <button class="my-button" onclick="addItem()">Add Item</button>
+      <button class="my-button1" onclick="clearAll()">Clear All</button>
+
+      <!-- Total -->
+      <h2>Total Spent</h2>
+      <p id="total">₹0.00</p>
+
+      <!-- Item List -->
+      <div id="item-list"></div>
+    </div>
+
+    <!-- Toast Notification Box -->
+    <div id="toastBox"></div>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
